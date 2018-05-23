@@ -1,0 +1,25 @@
+
+-------------------------
+Mon:1:30 mins
+Office 2 Hours
+Tue:1 Hour
+Wed:1 Hour
+Thur:1 Hour
+Fri:1 Hour
+Sat:2 Hour
+Sun:0 hours
+
+----------------
+Mon :1 Hour
+Tue: 30 mins
+Wed:2 Hours
+Thu:1 Hour
+Fri:
+Sat:
+Sun:
+
+
+
+compute:
+network:
+storage:
