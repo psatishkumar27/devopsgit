@@ -8,6 +8,7 @@ Thur:1 Hour
 Fri:1 Hour
 Sat:2 Hour
 Sun:0 hours
+added
 
 ----------------
 Mon :1 Hour
