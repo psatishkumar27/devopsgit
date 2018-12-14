@@ -4,3 +4,4 @@ read width
 read height 
 echo "Area of the rectangle is:"
 expr $width \* $height
+echo "Value"
