@@ -1,0 +1,4 @@
+- hosts: testsrv
+  tasks:
+       - name: Create file
+         file: path=/home/ubuntu/satishfolder  state=absent mode=0755

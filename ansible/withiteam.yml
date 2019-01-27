@@ -1,0 +1,9 @@
+- hosts: devserver
+  tasks: 
+       - name: create dir
+         file: name=/home/ubuntu/{{item}} state=directory
+         with_items:
+         - sam1
+         - cherry
+         - dev
+         tags: dir

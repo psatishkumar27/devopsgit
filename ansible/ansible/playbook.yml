@@ -1,0 +1,25 @@
+- hosts: devserver
+  tasks:
+       - name: install java
+         apt: name=openjdk-{{version}}-jdk state=present
+         tags: java
+       - name: install git
+         apt: name=git state=present	
+         tags: git
+       - name: run echo command
+         command: /bin/echo hello sammy
+         tags: test
+       - name: example copying file with owner and permissions
+         copy: src=/root/sam1 dest=/root/my-app/sam1
+         tags: test
+       - name: changing the file permissions
+         file: path=/root/my-app/sam1 mode=0777
+       - name: changing the permission  
+         file: path=/root/file123 mode=0755
+       - name: create folder
+         file: path=/home/ubuntu/{{item}} state=directory
+         with_items:
+                   - manoj
+                   - satish
+                   - kumar
+         tags: createfolder

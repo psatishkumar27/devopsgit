@@ -1,0 +1,5 @@
+- hosts: devserver
+  tasks:
+       - name: corn tab
+         cron: minute=5 job="/home/ubuntu/test.sh >> /home/ubuntu/test.txt"
+ 

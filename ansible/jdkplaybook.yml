@@ -1,0 +1,4 @@
+- hosts: devserver
+  tasks:
+  - name: install java
+    apt: name=openjdk-{{var}}-jdk state=latest

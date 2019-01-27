@@ -1,0 +1,20 @@
+- hosts: devserver
+  tasks:
+       - name: create file
+         file: path=/home/ubuntu/today state=touch
+         tags: file
+       - name: create dir
+         file: path=/home/ubuntu/mydir state=directory
+         tags: dir
+       - name: remove file
+         file: path=/home/ubuntu/today state=absent
+         tags: rmfile
+       - name: remove dir
+         file: path=/home/ubuntu/mydir state=absent
+         tags: rmdir
+       - name: copy folder
+         copy: scr=/home/ubuntu/ansible/roles dest=/home/ansible/roles
+         tags: foldercopy
+       - name: move folder
+         copy: scr=/home/ubuntu/testmv dest=/home/testmv mode=pull         
+         tags: movefolder

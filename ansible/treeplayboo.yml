@@ -1,0 +1,4 @@
+- hosts: devserver
+  tasks:
+  - name: Install tree
+    apt: name=tree state=present

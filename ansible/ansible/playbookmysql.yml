@@ -1,0 +1,15 @@
+- hosts: devserver
+  tasks:
+       - name: Install new APT package repository
+         apt: deb=mysql-apt-config_0.7.2-1_all.deb
+         sudo: yes
+       - name: Updating the cache
+         apt: update_cache=yes
+         sudo: yes
+       - name: Install mysql server
+         sudo: yes
+         apt: pkg={{ item }} state=latest
+         with_items:
+       - mysql-server
+       - mysql-client
+       - python-mysqldb

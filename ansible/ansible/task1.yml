@@ -1,0 +1,9 @@
+- hosts: devserver
+  tasks:
+       - name: Run the 
+         apt: update_cache=yes
+         tags: update
+       - name: change dir ownership
+         file: path=/home/ubuntu/ansible/chown owner=ubuntu group=ubuntu mode=0644 
+         tags: owner
+         

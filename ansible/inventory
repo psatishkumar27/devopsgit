@@ -1,0 +1,8 @@
+[devserver]
+localhost ansible_connection=local
+
+[apache]
+localhost ansible_connection=local
+
+[testsrv]
+3.17.143.87 ansible_port=22 ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/ubuntu123.pem

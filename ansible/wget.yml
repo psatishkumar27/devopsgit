@@ -1,0 +1,6 @@
+- hosts: devserver
+  tasks:
+       - name: download tomcat
+         get_url: url=https://www-eu.apache.org/dist/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz dest=/home/ubuntu/ansible mode=0440
+       - name: excart
+         unarchive: src=/home/ubuntu/ansible/apache-tomcat-8.5.37.tar.gz dest=/home/ubuntu/ansible

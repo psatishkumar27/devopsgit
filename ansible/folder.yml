@@ -1,0 +1,4 @@
+- hosts: devserver
+  tasks:
+  touch: name=/home/ubuntu/newfile state=present
+  
