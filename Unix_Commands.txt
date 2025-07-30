@@ -45,3 +45,4 @@ important configuration files
 /etc/nsswitch.conf = to decide/view the configuration of hostname resolution
 /etc/resolv.conf = please research on this.
 /etc/net* = research for all the files under this location
+this is for test
